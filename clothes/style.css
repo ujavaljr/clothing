@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    overflow-x: hidden;
+}
+body{
+    
+    background: #f8f8f8;
+    color: #333;
+  padding: 20px;
+  overflow-x: hidden;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(10px);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 1px solid #eee;
+}
+header .logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+header nav a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+header nav a:hover{
+    color: #000;
+}
+.hero {
+  height: 100vh;
+  background: url('img/aaa.webp')
+              center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+  color: #fff;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.35); 
+}
+.hero > div {
+  position: relative;
+  z-index: 2;
+}
+.hero h1{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.hero button{
+    padding: 12px 30px;
+    font-size: 1rem;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.hero button:hover{
+    background: #333;
+}
+section{
+    padding: 80px 40px;
+}
+.title{
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 25px;
+}
+.card{
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.card:hover { transform: translateY(-5px); }
+.card img { width: 100%; }
+.card .info { padding: 15px; }
+.card .info h4 { margin-bottom: 10px; }
+.card .info p { opacity: 0.8; }
+.categories .cat-grid {
+grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+.cat-card {
+background: #fff;
+padding: 60px 20px;
+border-radius: 14px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.3rem;
+font-weight: 600;
+cursor: pointer;
+box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+transition: 0.3s;
+}
+.cat-card:hover {
+transform: translateY(-6px);
+background: #000;
+color: #fff;
+}
+.featured .grid .card img {
+height: 330px;
+object-fit: cover;
+}
+
+
+
+.model-banner {
+position: relative;
+background: url('https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=1200&q=70') center/cover no-repeat;
+height: 70vh;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 60px 0;
+border-radius: 20px;
+overflow: hidden;
+}
+.model-banner .overlay {
+background: rgba(0,0,0,0.45);
+color: #fff;
+padding: 40px;
+text-align: center;
+border-radius: 12px;
+}
+.model-banner h2 {
+font-size: 2.5rem;
+margin-bottom: 10px;
+}
+.model-banner button {
+padding: 12px 28px;
+background: #fff;
+color: #000;
+border: none;
+border-radius: 30px;
+cursor: pointer;
+margin-top: 20px;
+transition: 0.3s;
+}
+.model-banner button:hover {
+background: #e3e3e3;
+}
+.testimonials .testimonial-grid {
+grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+.test-card {
+background: white;
+padding: 25px;
+border-radius: 16px;
+box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+transition: 0.3s;
+}
+.test-card:hover {
+transform: translateY(-5px);
+}
+.test-card p {
+font-style: italic;
+margin-bottom: 10px;
+}
+.newsletter {
+background: #000;
+color: white;
+padding: 80px 40px;
+text-align: center;
+border-radius: 20px;
+margin-top: 50px;
+}
+.newsletter input {
+padding: 12px 18px;
+width: 260px;
+border-radius: 30px;
+border: none;
+margin-top: 20px;
+}
+.newsletter button {
+padding: 12px 28px;
+margin-left: 10px;
+border-radius: 30px;
+border: none;
+background: #fff;
+cursor: pointer;
+transition: 0.3s;
+}
+.newsletter button:hover{
+    background: #ddd;
+}
+
+
+
+
+
+
+
+
+footer {
+background: #111;
+color: #fff;
+text-align: center;
+padding: 40px;
+margin-top: 50px;
+}
+
+
+@media(max-width:768px){
+header { padding: 15px 20px; }
+.hero h1 { font-size: 2rem; }
+}
